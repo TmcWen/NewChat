@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".db.info.UserInfoActivity">
+
+    <ImageView
+        android:id="@+id/imageViewUserInfoBackground"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#14000000"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewUserInfoHeadImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#FF9800"
+            android:layout_marginTop="80dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewUserInfoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名字"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/textViewUserInfoUid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uid"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/textViewUserInfoSlogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是签名"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/buttonUserInfoAddFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加好友"
+                android:textColor="@color/black"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/buttonUserInfoSendMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送消息"
+                android:textColor="@color/black"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".mainmenu.ChangeInfoActivity">
+
+    <include
+        android:id="@+id/includeChangeInfo"
+        layout="@layout/title_bar"
+        />
+
+    <LinearLayout
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名称"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextChangeInfoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/black"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroupChangeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radioButtonChangeInfoMan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textColor="@color/white"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButtonChangeInfoWoman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textColor="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/editTextChangeInfoSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入"
+                android:visibility="gone"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/black"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生日"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewChangeInfoBirthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试"
+            android:textColor="@color/white"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/black"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签名"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextChangeInfoSlogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="测试"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonChangeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center_horizontal"
+        android:text="确认"
+        android:textColor="@color/black"
+        />
+
+</LinearLayout>

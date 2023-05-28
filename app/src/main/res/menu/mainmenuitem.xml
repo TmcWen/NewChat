@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemMenuChat"
+        android:icon="@drawable/icon_message"
+        android:title="聊天"
+        />
+
+    <item
+        android:id="@+id/itemMenuFriend"
+        android:icon="@drawable/icon_friend"
+        android:title="好友"
+        />
+
+    <item
+        android:id="@+id/itemMenuSelf"
+        android:icon="@drawable/icon_test"
+        android:title="我的"
+        />
+
+</menu>
